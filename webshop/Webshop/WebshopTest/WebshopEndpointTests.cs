@@ -30,7 +30,7 @@ namespace WebshopTest
             var response = await Client.GetAsync("/warehouse/summary?itemname=Green+Fox+Jumper&size=s&amount=3");
             string responseJson = await response.Content.ReadAsStringAsync();
 
-            Assert.Equal("{\"itemname\":\"Green Fox Jumper\", \"manufacturer\":\"Gucci\", \"category\":\"sweaters\", \"quantity\":\"3\",\"sub-total price\":240}", responseJson);
+            Assert.Equal("{\"itemname\":\"Green Fox Jumper\", \"manufacturer\":\"Gucci\", \"category\":\"sweaters\", \"size\":\"s\", \"quantity\":3, \"sub-total price\":240}", responseJson);
         }
 
         [Fact]

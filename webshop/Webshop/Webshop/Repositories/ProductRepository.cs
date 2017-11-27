@@ -25,7 +25,7 @@ namespace Webshop.Repositories
         {
             Product product = productContext.Products.Where(x => x.ItemName == itemName && x.Size == size).FirstOrDefault();
             product.Price *= amount;
-            product.Size = amount.ToString();
+            product.Id = amount;
             return product;
         }
 
