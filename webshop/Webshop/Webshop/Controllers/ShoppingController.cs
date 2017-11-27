@@ -23,5 +23,26 @@ namespace Webshop.Controllers
         {
             return View();
         }
+
+        [Route("/warehouse")]
+        [HttpGet]
+        public IActionResult Warehouse()
+        {
+            return Ok();
+        }
+
+        [Route("/warehouse/summary")]
+        [HttpPost]
+        public IActionResult WareHouseSummary()
+        {
+            return Ok();
+        }
+
+        [Route("/warehouse/query")]
+        [HttpGet]
+        public IActionResult WarehouseQuery()
+        {
+            return Ok();
+        }
     }
 }
