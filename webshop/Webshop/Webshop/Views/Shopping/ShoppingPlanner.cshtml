@@ -24,12 +24,14 @@
     <h1>Green Fox Fashion Web Store</h1>
     <form action="/warehouse/summary" method="get">
         <select name="itemname">
+            <option selected disabled>Select item name</option>
             @foreach (var element in items)
             {
                 <option value="@element">@element</option>
             }
         </select>
         <select name="size">
+            <option selected disabled>Select size</option>
             @foreach (var element in sizes)
             {
                 <option value="@element">@element</option>
