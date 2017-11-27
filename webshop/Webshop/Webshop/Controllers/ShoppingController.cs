@@ -40,9 +40,9 @@ namespace Webshop.Controllers
 
         [Route("/warehouse/query")]
         [HttpGet]
-        public IActionResult WarehouseQuery()
+        public IActionResult WarehouseQuery([FromQuery]int price, [FromQuery]string type)
         {
-            return Ok();
+            return Json(new { result = "ok" });
         }
     }
 }
