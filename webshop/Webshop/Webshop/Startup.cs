@@ -14,7 +14,7 @@ namespace Webshop
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            // services.AddMvc();
+            services.AddMvc();
             // services sql stb.stb.
             // services.AddScoped(stb.stb.
         }
@@ -28,7 +28,7 @@ namespace Webshop
                 app.UseDeveloperExceptionPage();
             }
 
-            //app.UseMvc();
+            app.UseMvc();
             //app.UseStaticFiles();
 
             app.Run(async (context) =>
