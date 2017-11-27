@@ -1,0 +1,7 @@
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\Webshop\bin\Debug\netcoreapp1.1\Webshop.deps.json
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\Webshop\bin\Debug\netcoreapp1.1\Webshop.runtimeconfig.json
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\Webshop\bin\Debug\netcoreapp1.1\Webshop.runtimeconfig.dev.json
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\Webshop\bin\Debug\netcoreapp1.1\Webshop.dll
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\Webshop\obj\Debug\netcoreapp1.1\Webshop.csprojResolveAssemblyReference.cache
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\Webshop\obj\Debug\netcoreapp1.1\Webshop.csproj.CoreCompileInputs.cache
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\Webshop\obj\Debug\netcoreapp1.1\Webshop.AssemblyInfo.cs

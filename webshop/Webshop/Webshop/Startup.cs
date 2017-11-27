@@ -15,6 +15,8 @@ namespace Webshop
         public void ConfigureServices(IServiceCollection services)
         {
             // services.AddMvc();
+            // services sql stb.stb.
+            // services.AddScoped(stb.stb.
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
@@ -27,6 +29,7 @@ namespace Webshop
             }
 
             //app.UseMvc();
+            //app.UseStaticFiles();
 
             app.Run(async (context) =>
             {
