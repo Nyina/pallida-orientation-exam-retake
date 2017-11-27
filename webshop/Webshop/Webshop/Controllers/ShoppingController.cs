@@ -29,7 +29,7 @@ namespace Webshop.Controllers
         [HttpGet]
         public IActionResult Summary([FromQuery]string itemname, [FromQuery]string size, [FromQuery]int amount)
         {
-            return View(productRepository.ListSelected(itemname, size, amount));
+            return View(productRepository.Selected(itemname, size, amount));
         }
 
         [Route("/warehouse/summary")]
