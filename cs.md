@@ -84,3 +84,4 @@ Example query:
 
 ## 3) Question time
   Why would you declare your class as an abstract class?
+  Declaring a class as abstract is useful when it is a base class, and its methods should be implemented differently in the future derived classes.
