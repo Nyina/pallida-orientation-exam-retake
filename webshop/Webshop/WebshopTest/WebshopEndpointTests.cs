@@ -34,12 +34,12 @@ namespace WebshopTest
         }
 
         [Fact]
-        public async Task SummaryManagementTestAgain()
+        public async Task QueryManagementTest()
         {
-            var response = await Client.GetAsync("/warehouse/summary?itemname=Half-Ip+Ribbed+Mock-Turtleneck+Sweater&size=s&amount=2");
+            var response = await Client.GetAsync("/warehouse/query?price=50&type=lower");
             string responseJson = await response.Content.ReadAsStringAsync();
 
-            Assert.Equal("{\"itemname\":\"Half-Ip Ribbed Mock-Turtleneck Sweater\", \"manufacturer\":\"Polo Ralph Lauren\", \"category\":\"sweaters\", \"quantity\":\"2\",\"sub-total price\":118}", responseJson);
+            Assert.Equal("{\"result\":\"ok\",\"clothes\":[{\"Id\":16,\"ItemName\":\"Strecth Steamed Pencil Skirt\",\"Manufacturer\":\"Calvin Klein\",\"Category\":\"skirts\",\"Size\":\"s\",\"Price\":39},{\"Id\":18,\"ItemName\":\"Strecth Steamed Pencil Skirt\",\"Manufacturer\":\"Calvin Klein\",\"Category\":\"skirts\",\"Size\":\"m\",\"Price\":39}]}", responseJson);
         }
     }
 }

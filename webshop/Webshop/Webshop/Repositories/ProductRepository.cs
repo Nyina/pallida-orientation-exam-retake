@@ -28,5 +28,18 @@ namespace Webshop.Repositories
             product.Size = amount.ToString();
             return product;
         }
+
+        public List<Product> SelectWithCondition(int price, string status)
+        {
+            if (status == "lower")
+            {
+                return productContext.Products.Where(x => x.Price < price).ToList();
+            }
+            if (status == "higher")
+            {
+                return productContext.Products.Where(x => x.Price > price).ToList();
+            }
+            return productContext.Products.Where(x => x.Price == price).ToList();
+        }
     }
 }

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Webshop.Repositories;
+using Webshop.Models;
+using Newtonsoft.Json;
 
 namespace Webshop.Controllers
 {
@@ -43,7 +45,9 @@ namespace Webshop.Controllers
         [HttpGet]
         public IActionResult WarehouseQuery([FromQuery]int price, [FromQuery]string type)
         {
-            return Json(new { result = "ok" });
+            List<Product> list = productRepository.SelectWithCondition(price, type);
+            var jsonstring = JsonConvert.SerializeObject(list).Replace("[", "{").Replace("]", "}").Replace("}}", "}]}").Replace("{{", "{\"result\":\"ok\",\"clothes\":[{");
+            return Json(jsonstring);
         }
     }
 }
