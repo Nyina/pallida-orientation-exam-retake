@@ -18,32 +18,25 @@ namespace Webshop.Controllers
         }
 
         [Route("")]
-        [Route("/shoppingplanner")]
+        [Route("/warehouse")]
         [HttpGet]
         public IActionResult ShoppingPlanner()
         {
             return View(productRepository.ListAll());
         }
 
-        [Route("/summary")]
+        [Route("/warehouse/summary")]
         [HttpGet]
-        public IActionResult Summary()
+        public IActionResult Summary([FromQuery]string itemname, [FromQuery]string size, [FromQuery]int amount)
         {
-            return View();
-        }
-
-        [Route("/warehouse")]
-        [HttpGet]
-        public IActionResult Warehouse()
-        {
-            return Ok();
+            return View(productRepository.ListSelected(itemname, size, amount));
         }
 
         [Route("/warehouse/summary")]
         [HttpPost]
         public IActionResult WareHouseSummary()
         {
-            return Ok();
+            return RedirectToAction("Summary");
         }
 
         [Route("/warehouse/query")]

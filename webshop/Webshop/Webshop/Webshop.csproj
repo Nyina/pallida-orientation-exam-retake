@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Views\Shopping\ShoppingPlanner.cshtml" />
+    <None Include="Views\Shopping\Warehouse.cshtml" />
     <None Include="Views\Shopping\Summary.cshtml" />
   </ItemGroup>
 

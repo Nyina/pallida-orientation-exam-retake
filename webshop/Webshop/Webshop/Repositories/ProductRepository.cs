@@ -20,5 +20,13 @@ namespace Webshop.Repositories
         {
             return productContext.Products.ToList();
         }
+
+        public Product ListSelected(string itemName, string size, int amount)
+        {
+            Product product = productContext.Products.Where(x => x.ItemName == itemName && x.Size == size).FirstOrDefault();
+            product.Price *= amount;
+            product.Size = amount.ToString();
+            return product;
+        }
     }
 }
