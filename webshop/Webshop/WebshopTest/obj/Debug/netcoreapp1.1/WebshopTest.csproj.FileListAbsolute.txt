@@ -1,0 +1,15 @@
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\WebshopTest\bin\Debug\netcoreapp1.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\WebshopTest\bin\Debug\netcoreapp1.1\xunit.runner.utility.netstandard15.dll
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\WebshopTest\bin\Debug\netcoreapp1.1\xunit.runner.reporters.netstandard15.dll
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\WebshopTest\bin\Debug\netcoreapp1.1\WebshopTest.deps.json
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\WebshopTest\bin\Debug\netcoreapp1.1\WebshopTest.runtimeconfig.json
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\WebshopTest\bin\Debug\netcoreapp1.1\WebshopTest.runtimeconfig.dev.json
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\WebshopTest\bin\Debug\netcoreapp1.1\WebshopTest.dll
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\WebshopTest\obj\Debug\netcoreapp1.1\WebshopTest.csprojResolveAssemblyReference.cache
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\WebshopTest\obj\Debug\netcoreapp1.1\WebshopTest.csproj.CoreCompileInputs.cache
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\WebshopTest\obj\Debug\netcoreapp1.1\WebshopTest.AssemblyInfo.cs
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\WebshopTest\bin\Debug\netcoreapp1.1\WebshopTest.pdb
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\WebshopTest\bin\Debug\netcoreapp1.1\Webshop.dll
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\WebshopTest\bin\Debug\netcoreapp1.1\Webshop.pdb
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\WebshopTest\obj\Debug\netcoreapp1.1\WebshopTest.dll
+C:\Users\Boldizsár\greenfox\pallida-orientation-exam-retake\webshop\Webshop\WebshopTest\obj\Debug\netcoreapp1.1\WebshopTest.pdb
