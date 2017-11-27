@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
 using Webshop.Models;
+using System.IO;
 
 namespace WebshopTest
 {
@@ -20,7 +21,7 @@ namespace WebshopTest
 
         public WebshopEndpointTests()
         {
-            Server = new TestServer(new WebHostBuilder().UseStartup<Startup>());
+            Server = new TestServer(new WebHostBuilder());
             Client = Server.CreateClient();
         }
 
@@ -30,7 +31,7 @@ namespace WebshopTest
             var response = await Client.GetAsync("/warehouse/summary?itemname=Green+Fox+Jumper&size=s&amount=3");
             string responseJson = await response.Content.ReadAsStringAsync();
 
-            Assert.Equal("{\"itemname\":\"Green Fox Jumper\", \"manufacturer\":\"Gucci\", \"category\":\"sweaters\", \"size\":\"s\", \"quantity\":3, \"sub-total price\":240}", responseJson);
+            Assert.Equal("{\"itemname\":\"Green Fox Jumper\",\"manufacturer\":\"Gucci\",\"category\":\"sweaters\",\"size\":\"s\",\"quantity\":3,\"sub-total price\":240}", responseJson);
         }
 
         [Fact]
@@ -40,6 +41,7 @@ namespace WebshopTest
             string responseJson = await response.Content.ReadAsStringAsync();
 
             Assert.Equal("{\"result\":\"ok\",\"clothes\":[{\"Id\":16,\"ItemName\":\"Strecth Steamed Pencil Skirt\",\"Manufacturer\":\"Calvin Klein\",\"Category\":\"skirts\",\"Size\":\"s\",\"Price\":39},{\"Id\":18,\"ItemName\":\"Strecth Steamed Pencil Skirt\",\"Manufacturer\":\"Calvin Klein\",\"Category\":\"skirts\",\"Size\":\"m\",\"Price\":39}]}", responseJson);
+            //Actually it doesn't work, but I'm almost sure it should look like this.
         }
     }
 }
