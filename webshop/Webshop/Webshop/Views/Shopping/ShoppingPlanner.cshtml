@@ -1,4 +1,8 @@
 ﻿@model System.Collections.Generic.List<Webshop.Models.Product>
+@{ 
+    System.Collections.Generic.List<string> items = new System.Collections.Generic.List<string>();
+    System.Collections.Generic.List<string> sizes = new System.Collections.Generic.List<string>();
+}
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,10 +10,31 @@
     <title>Shopping Planner</title>
 </head>
 <body>
+    @foreach (var element in Model)
+    {
+        if (!items.Contains(element.ItemName))
+        {
+            items.Add(element.ItemName);
+        }
+        if (!sizes.Contains(element.Size))
+        {
+            sizes.Add(element.Size);
+        }
+    }
     <h1>Green Fox Fashion Web Store</h1>
     <form action="/warehouse/summary" method="get">
-        <input type="text" name="itemname" value="Select item name" />
-        <input type="text" name="size" value="Select size" />
+        <select name="itemname">
+            @foreach (var element in items)
+            {
+                <option value="@element">@element</option>
+            }
+        </select>
+        <select name="size">
+            @foreach (var element in sizes)
+            {
+                <option value="@element">@element</option>
+            }
+        </select>
         <input type="text" name="amount" value="" />
         <button type="submit">GET TOTAL</button>
     </form>
