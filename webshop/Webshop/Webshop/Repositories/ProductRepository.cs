@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Webshop.Entities;
+using Webshop.Models;
 
 namespace Webshop.Repositories
 {
@@ -13,6 +14,11 @@ namespace Webshop.Repositories
         public ProductRepository(ProductContext productContext)
         {
             this.productContext = productContext;
+        }
+
+        public List<Product> ListAll()
+        {
+            return productContext.Products.ToList();
         }
     }
 }

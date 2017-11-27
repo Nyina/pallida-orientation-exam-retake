@@ -22,7 +22,7 @@ namespace Webshop.Controllers
         [HttpGet]
         public IActionResult ShoppingPlanner()
         {
-            return View();
+            return View(productRepository.ListAll());
         }
 
         [Route("/summary")]

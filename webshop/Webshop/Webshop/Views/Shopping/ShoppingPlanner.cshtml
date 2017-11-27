@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model System.Collections.Generic.List<Webshop.Models.Product>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -13,6 +14,16 @@
             <th>Size</th>
             <th>Unit price</th>
         </tr>
+        @foreach (var element in Model)
+        {
+            <tr>
+                <td>@element.ItemName</td>
+                <td>@element.Manufacturer</td>
+                <td>@element.Category</td>
+                <td>@element.Size</td>
+                <td>@element.Price</td>
+            </tr>
+        }
     </table>
 </body>
 </html>
